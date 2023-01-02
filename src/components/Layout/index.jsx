@@ -1,10 +1,12 @@
 import Header from "../Header";
+import Main from "../Main";
 import styles from "./style.module.css";
 
 function index() {
   return (
-    <div>
+    <div className={styles.layout}>
       <Header />
+      <Main />
     </div>
   );
 }

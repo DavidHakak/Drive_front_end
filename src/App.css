@@ -27,10 +27,10 @@ button{
 }
 
 input{
-  border: none;
+  all:initial;
 }
 
 :root{
   --primary-color: #dc1a1a;
-  --secondary-color: #d3d3d3;
+  --secondary-color: #bebcbc;
 }

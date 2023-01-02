@@ -1,0 +1,27 @@
+.popupCreateFolder{
+    padding: 3px;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 70px;
+    right: 140px;
+}
+
+.popupCreateFolder:focus{
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: 0px;
+}
+
+.arrowCreateFolder{
+    padding: 3px;
+    background: none;
+    font-size: 1.1rem; 
+    cursor:pointer;
+    position: absolute;
+    top: 70px;
+    right: 142px;
+}
