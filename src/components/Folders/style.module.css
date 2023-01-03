@@ -47,6 +47,35 @@
 
 
 
+
+.popupRenameFolder{
+padding: 3px;
+font-size: 1.2rem;
+border-bottom: 2px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 60px;
+}
+
+.popupRenameFolder:focus{
+    border: none;
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: 0px;
+}
+
+.arrowRenameFolder{
+    padding: 3px;
+    background: none;
+    font-size: 1.1rem; 
+    cursor:pointer;
+    position: absolute;
+    top: 58px;
+    left: 175px;
+}
+
+
 @media screen and (max-width: 1500px){
     .folderInnerContainer{
         background: palevioletred;

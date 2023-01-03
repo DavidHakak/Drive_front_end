@@ -1,14 +1,27 @@
 import styles from "./style.module.css";
 import { BsFolderPlus } from "react-icons/bs";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import MainContext from "../../../context/MainContext";
+import axios from "axios";
 
 function CreateFolderIcon() {
+  const PORT = "http://localhost:4890/api/";
+  const { path, getAllFilesInThisFolder } = useContext(MainContext);
   const [createFolder, setCreateFolder] = useState(false);
   const [folderName, setFolderName] = useState();
 
-  function handleSubmitFolderName(e) {
-    console.log(folderName);
+  function handleSubmitFolderName() {
     setCreateFolder(false);
+    axios
+      .post(PORT + "folders/createFolder", {
+        path: path + "/" + folderName,
+      })
+      .then((res) => {
+        getAllFilesInThisFolder();
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }
 
   return (
@@ -29,7 +42,7 @@ function CreateFolderIcon() {
           <button
             type="button"
             className={styles.arrowCreateFolder}
-            onClick={(e) => handleSubmitFolderName(e)}
+            onClick={handleSubmitFolderName}
           >
             ➜
           </button>

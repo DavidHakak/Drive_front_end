@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 70px;
+    top: 60px;
     right: 140px;
 }
 
@@ -22,6 +22,6 @@
     font-size: 1.1rem; 
     cursor:pointer;
     position: absolute;
-    top: 70px;
+    top: 58px;
     right: 142px;
 }

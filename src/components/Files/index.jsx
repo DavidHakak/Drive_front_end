@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 import { AiOutlineFileJpg } from "react-icons/ai";
 import { AiOutlineMore } from "react-icons/ai";
 import { useState } from "react";
-import FileOptions from "../FileOptions";
+import FileOptions from "./FileOptions";
 
 function Files(props) {
   const [isOpen, setIsOpen] = useState(false);
